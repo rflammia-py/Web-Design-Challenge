@@ -24,30 +24,47 @@
 <!--BEGIN DIV CLASSES-->
 
 <body>
-        <nav>
-            <a class="links" href="index.html">Latitude</a>
-            <a class="links" href="comparison.html">Comparison</a>
-            <a class="links" href="data.html">Data</a>
-            <div class="dropdown-menu">
-                <button class="menu-btn">Plots </button>
-                <div class="menu-content">
-                    <a class="links-hidden" href="maxtemperature.html">Max Tempterature</a>
-                    <a class="links-hidden" href="humidity.html">Humidity</a>
-                    <a class="links-hidden" href="cloudiness.html">Cloudiness</a>
-                    <a class="links-hidden" href="windspeed.html">Wind Speed</a>
+    <div class="container-fluid">
+        <nav class="navbar navbar-inverse">
+            <div class="container-fluid">
+                <div class="navbar-header">
+                    <a class="navbar-brand" href="./landing.html"><span class="latitude">Latitude</a>
+                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls=" navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                    </button>
                 </div>
+                <ul class="nav navbar-nav navbar-right">
+                    <li>
+                        <div class="dropdown">
+                            <button class="btn btn-primary dropdown-toggle" type="button" data-toggle="dropdown">Plots
+                            <span class="caret"></span></button> 
+                            <ul class="dropdown-menu">
+                                <li><a href="maxtemperature.html">Latitude vs. Max Temperature</a></li>
+                                <li><a href="humidity.html">Latitude vs. Humidity</a></li>
+                                <li><a href="cloudiness.html">Latitude vs. Cloudiness</a></li>
+                                <li><a href="windspeed.html">Latitude vs. Wind Speed</a></li>
+
+                            </ul>
+                        </div>
+                    </li>
+                    <li>
+                        <a class="nav-link" href="./Comparisons.html"><span class="c-d">Comparison</a>
+                    </li>
+                    <li>
+                        <a class="nav-link" href="./Data.html"><span class="c-d">Data</a>
+                    </li>
+                </ul>
             </div>
-
         </nav>
-            <!--DIVIDER ROWS-->
- 
     
-
-        <div class= "container">
+    <div class="content">
+        <div class= "container-fluid">
             <div class= "row">
-                <div class= "col-md-7">
+                <div class= "col-sm-12 col-md-8">
                     <div class="main-box whiteback">
-                    <h1>Summary: Latitude vs X</h1>
+                        <div class="page-header">
+                            <h1>Summary: Latitude vs X</h1>
+                        </div>
                     <hr>
                     <div id="summarytext">
                         <img id= "landingimage" src= "Resources/assets/images/Fig1.png" alt= "City Latitude vs. Max Temperature">
@@ -64,19 +81,21 @@
                     </div>
                 </div>
 
-                <div class= "col-md-5">
-                    <div class= "side-box">
-                    <h2 class= "main-pg-subheader">Visualizations</h2>
+                <div class="col-sm-12 col-md-4">
+                    <div class="box">
+                        <div class="page-header">
+                            <h1 class="title">Visualizations</h1>
+                        </div>
                     <div class= "sidebar">
                         <a href= "maxtemperature.html"><img id= "side-img1" src="Resources/assets/images/Fig1.png" alt= "City Latitude vs. Max Temperature"></a>
                         <a href= "humidity.html"><img id= "side-img2" src= "Resources/assets/images/Fig2.png", alt= "City Latitude vs. Humidity"></a>
                         <a href= "cloudiness.html"><img id= "side-img3" src= "Resources/assets/images/Fig3.png", alt= "City Latitude vs. Cloudiness"></a>
                         <a href= "wind.html"><img id= "side-img4" src= "Resources/assets/images/Fig4.png", alt= "City Latitude vs. Wind Speed"></a>
-                        </div>
                     </div>
                 </div>
             </div>
         </div>
+    </div>
 
 
 <!--END DIV CLASSES-->
