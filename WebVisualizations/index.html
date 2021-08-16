@@ -7,6 +7,9 @@
 
 
     <link rel="stylesheet" type="text/css" media="screen" href="style.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
  
     <title>Latitude Analysis Dashboard with Attitude</title>
 
@@ -25,15 +28,27 @@
 
 <body>
     <nav class="navbar navbar-default">
-        <div class="container">
+        <div class="container-fluid">
             <!--BEGIN ACTIVE NAVIGATION-->
             <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
                 <a class="navbar-brand" href="index.html"> 
                 <span class="nav-color navbaractive">Latitude</span></a>
             </div>
             <!--END ACTIVE NAVIGATION-->
+            <div class="collapse navbar-collapse" id="myNavbar">
+                <ul class="nav navbar-nav">
+                  <li class="active"><a href="#">Home</a></li>
+                  <li><a href="maxtemperature.html">Max Temperature</a></li>
+                  <li><a href="humidity.html">Humidity</a></li>
+                  <li><a href="cloudiness.html">Cloudiness</a></li>
+                  <li><a href="windspeed.html">Wind Speed</a></li>
+                </ul>
 
-            
             <div class="nav navbar-nav navbar-right">
                 <!--BEGIN DROP DOWN NAV-->
                 <li class="dropdown">
