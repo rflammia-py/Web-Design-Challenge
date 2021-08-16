@@ -22,7 +22,7 @@ body{
     z-index: 1;
  }
  nav{
-    background-color: white;
+    background-color: lightgrey;
  }
  .links,.links-hidden{
     display: inline-block;
