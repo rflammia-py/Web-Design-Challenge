@@ -24,71 +24,88 @@
 <!--BEGIN DIV CLASSES-->
 
 <body>
-    <nav class="navbar navbar-inverse">
-        <div class="container">
-            
-            <div class="navbar-header">
-                <a class="navbar-brand logo" href="index.html"> 
-                <span class="nav-color">Latitude</span></a>
-            
+  
+    <nav class="navbar  fixed-top  navbar-default" style="background-color: #e3f2fd;"">
+        <div class="container-fluid">
+          <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand h5" href="index.html"><i class="glyphicon glyphicon-home"></i>
+               Latitude</a>
+          </div>
+          <div class="collapse navbar-collapse navbar-right" id="myNavbar">
+            <ul class="nav navbar-nav">
+              <li class="dropdown">
+                <a class="dropdown-toggle" data-toggle="dropdown" href="#"><span class="glyphicon glyphicon-stats"></span> Plots <span class="caret"></span></a>
+                <ul class="dropdown-menu">
+                  <li><a href="maxTemp.html">Max Temperature</a></li>
+                  <li><a href="humidity.html">Humidity</a></li>
+                  <li><a href="cloudiness.html">Cloudiness</a></li>
+                  <li><a href="windspeed.html">Wind Speed</a></li>
+                </ul>
+              </li>
+              <li><a href="comparison.html"><span class="glyphicon glyphicon-wrench"></span> Comparison</a></li>
+              <li><a href="data.html"><span class="glyphicon glyphicon-list-alt"></span> Data</a></li>
+            </ul>
+          </div>
         </div>
-
-            <div class="nav navbar-nav navbar-right">
-                <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown">Plots<span class="caret"></span></a>
-                    <ul class="dropdown-menu">
-                        <li><a href="temperature.html">Max Temperature</a></li>
-                        <li><a href="humidity.html">Humidity</a></li>
-                        <li><a href="cloudiness.html">Cloudiness</a></li>
-                        <li><a href="windspeed.html">Wind Speed</a></li>
-                    </ul>
-                </li>
-                <li><a href="comparison.html"> Comparison</a></li>
-                <li><a href="data.html"> Data</a></li>                                           
+      </nav>
+    
+    
+    
+    
+    
+    
+      <div class="container">
+        <div class="row">
+          <div class="col-sm-12 col-md-7 main">
+            <div class="jumbotron">
+              <h2 class="display-4">Summary: Latitude vs. X</h2>
+              <hr class="my-4">
+              <img class="pull-left img-responsive" src="Resources/assets/images/latitude.png" alt="Card image cap" style="width: 40%;">
+              <p>The purpose of this project was to analyze
+                how weather changes as you get closer to the equator. To accomplish this analysis, we first pulled data from the OpenWeatherMap API to assemble a dataset on over 500 cities.</p>
+              <p>After assembling the dataset, we used Matplotlib to plot various
+                aspects of the weather vs. latitude. Factors we looked at included:
+                temperature, cloudiness, wind speed, and humidity. This site provides the source data and visualizations created as part of the analysis, as well as explanations and descriptions of any trends and correlations witnessed.</p>
             </div>
-        </div>      
-    </nav>
-
-    <div class = "container" >
-        
-            <div class="row">
-            <div class="col-md-8">
-                <div class="panel panel-default">
-                    <div class="panel-body">
-
-                    <h2>Summary: Latitude vs Longitude</h2>
-                    <hr>
-                    <img src="Resources/assets/images/Fig1.png" height="280" width="380" align="left" alt="first image" >
-                    <p class="p1">The purpose of this project was to analyze how weather changes as you get close to the equator.To accomplish this analysis we first pulled data from the OpenWeatherMap API to assemble a dataset on over 500 cities.</p>
-                     <p class= "p1">After assembling the dataset, we used Matplotlib to plot various aspects of weather vs. latitude. Factors we looked at included: temperatue, cloudiness, wind speed and humidity. This site provides the source data and visualizations 
-                                    created as part of the analysis as well as explanations and descriptions of any trends and correlations witnessed.
-                    </p>
-                
-                    <br>        
-                    </div>
-               
+          </div>
+    
+          <div class="col-sm-12 col-md-5 right">
+            <div class="jumbotron">
+              <h2 class="display-4">Visualisations</h2>
+              <hr class="my-4">
+              <div class="row">
+                <div class="col-12 col-sm-3 col-md-6">
+                  <a href="maxTemp.html">         
+                   <img class="img-responsive" src="Resources/assets/images/Fig1.png" alt="Card image cap">
+                  </a>
+                </div>
+                <div class="col-12 col-sm-3 col-md-6"> 
+                  <a href="humidity.html">           
+                    <img class="img-responsive" src="Resources/assets/images/Fig2.png" alt="Card image cap">
+                  </a>
+                </div>
+            
+                <div class="col-12 col-sm-3 col-md-6"> 
+                  <a href="claudiness.html">       
+                    <img class="img-responsive" src="Resources/assets/images/Fig3.png" alt="Card image cap">
+                  </a>
+                </div>
+                <div class="col-12 col-sm-3 col-md-6"> 
+                  <a href="windSpeed.html">       
+                    <img class="img-responsive" src="Resources/assets/images/Fig4.png" alt="Card image cap">
+                  </a>
+                </div>
+                </div>
+              </div>
             </div>
-            </div>
-            <div class="col-md-4">
-                <div class="panel panel-default">
-                        <div class="panel-body">                                    
-                            <h2>Visualizations</h2>
-                            <hr>
-
-                            <div class="row" >
-                                <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6"><a href="temperature.html"><img class = "img img-responsive" src="Resources/assets/images/Fig1.png" style="width:100%" alt=""></a></div>
-                                <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6"><a href="humidity.html"><img class = "img img-responsive" src="Resources/assets/images/Fig2.png" style="width:100%" alt=""></a></div>
-                            </div>
-                            <div class="row">
-                                <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6"><a href="cloudiness.html"><img class = "img img-responsive" src="Resources/assets/images/Fig3.png" style="width:100%" alt=""></a></div>
-                                <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6"><a href="windspeed.html"><img class = "img img-responsive" src="Resources/assets/images/Fig4.png" style="width:100%" alt=""></a></div>
-                            </div>
-                                
-                        </div>
-                </div>     
-            </div>    
-    </div>
-
-
+          </div>
+        </div>
+      </div>
 <!--END DIV CLASSES-->
 
 </body>
