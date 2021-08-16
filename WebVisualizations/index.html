@@ -24,20 +24,36 @@
 <!--BEGIN DIV CLASSES-->
 
 <body>
-    <nav>
-        <a class="links" href="index.html">HOME</a>
-        <a class="links" href="comparison.html">Comparison</a>
-        <a class="links" href="data.html">Data</a>
-        <div class="dropdown-menu">
-            <button class="menu-btn">Plots </button>
-            <div class="menu-content">
-                <a class="links-hidden" href="maxtemperature.html">Max Tempterature</a>
-                <a class="links-hidden" href="humidity.html">Humidity</a>
-                <a class="links-hidden" href="cloudiness.html">Cloudiness</a>
-                <a class="links-hidden" href="windspeed.html">Wind Speed</a>
+    <nav class="navbar navbar-default">
+        <div class="container">
+            <!--BEGIN ACTIVE NAVIGATION-->
+            <div class="navbar-header">
+                <a class="navbar-brand" href="index.html"> 
+                <span class="nav-color navbaractive">Latitude</span></a>
             </div>
-        </div>
+            <!--END ACTIVE NAVIGATION-->
 
+            
+            <div class="nav navbar-nav navbar-right">
+                <!--BEGIN DROP DOWN NAV-->
+                <li class="dropdown">
+                    <a class="dropdown-toggle" data-toggle="dropdown">Plots<span class="caret"></span></a>
+                    <ul class="dropdown-menu">
+                        <li><a href="maxtemperature.html">Max Temperature</a></li>
+                        <li><a href="humidity.html">Humidity</a></li>
+                        <li><a href="cloudiness.html">Cloudiness</a></li>
+                        <li><a href="windspeed.html">Wind Speed</a></li>
+                    </ul>
+                </li>
+                <!--END DROP DOWN NAV-->
+
+                <!--BEGIN DROP DOWN NAV-->
+                <li><a href="comparison.html"> Comparison</a></li>
+                <li><a href="data.html"> Data</a></li>           
+                <!--BEGIN DROP DOWN NAV-->                                
+            </div>
+
+        </div>      
     </nav>
     
     
