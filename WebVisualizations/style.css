@@ -2,7 +2,7 @@ body{
     background-color:lightgrey
 }
 .menu-btn {
-    background-color: #040008;
+    background-color: lightgrey;
     color: white;
     padding: 16px;
     font-size: 20px;
@@ -17,12 +17,12 @@ body{
  .menu-content {
     display: none;
     position: absolute;
-    background-color: #017575;
+    background-color:white;
     min-width: 160px;
     z-index: 1;
  }
  nav{
-    background-color: #017575;
+    background-color: white;
  }
  .links,.links-hidden{
     display: inline-block;
