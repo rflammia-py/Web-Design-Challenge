@@ -24,46 +24,31 @@
 <!--BEGIN DIV CLASSES-->
 
 <body>
-        <nav class="navbar navbar-default">
-                <div class="container">
-                    <!--BEGIN ACTIVE NAVIGATION-->
-                    <div class="navbar-header">
-                        <a class="navbar-brand" href="index.html"> 
-                        <span class="nav-color navbaractive">Latitude</span></a>
-                    </div>
-                    <!--END ACTIVE NAVIGATION-->
-        
-                    
-                    <div class="nav navbar-nav navbar-right">
-                        <!--BEGIN DROP DOWN NAV-->
-                        <li class="dropdown">
-                            <a class="dropdown-toggle" data-toggle="dropdown">Plots<span class="caret"></span></a>
-                            <ul class="dropdown-menu">
-                                <li><a href="maxtemperature.html">Max Temperature</a></li>
-                                <li><a href="humidity.html">Humidity</a></li>
-                                <li><a href="cloudiness.html">Cloudiness</a></li>
-                                <li><a href="windspeed.html">Wind Speed</a></li>
-                            </ul>
-                        </li>
-                        <!--END DROP DOWN NAV-->
+        <nav>
+            <a class="links" href="index.html">HOME</a>
+            <a class="links" href="comparison.html">Comparison</a>
+            <a class="links" href="data.html">Data</a>
+            <div class="dropdown-menu">
+                <button class="menu-btn">Plots </button>
+                <div class="menu-content">
+                    <a class="links-hidden" href="maxtemperature.html">Max Tempterature</a>
+                    <a class="links-hidden" href="humidity.html">Humidity</a>
+                    <a class="links-hidden" href="cloudiness.html">Cloudiness</a>
+                    <a class="links-hidden" href="windspeed.html">Wind Speed</a>
+                </div>
+            </div>
 
-                        <!--BEGIN DROP DOWN NAV-->
-                        <li><a href="comparison.html"> Comparison</a></li>
-                        <li><a href="data.html"> Data</a></li>           
-                        <!--BEGIN DROP DOWN NAV-->                                
-                    </div>
-        
-                </div>      
-            </nav>
+        </nav>
             <!--DIVIDER ROWS-->
  
     
 
+            
         <div class= "container">
             <div class= "row">
                 <div class= "col-md-7">
                     <div class="main-box whiteback">
-                    <h1>Wind Speed</h1>
+                    <h1>Summary: Latitude vs Windspeed</h1>
                     <hr>
                     <div id="summarytext">
                         <img id= "landingimage" src= "Resources/assets/images/Fig1.png" alt= "City Latitude vs. Max Temperature">
@@ -79,10 +64,10 @@
                     </div>
                     </div>
                 </div>
+
                 <div class= "col-md-5">
                     <div class= "side-box">
                     <h2 class= "main-pg-subheader">Visualizations</h2>
-                    <hr>
                     <div class= "sidebar">
                         <a href= "maxtemperature.html"><img id= "side-img1" src="Resources/assets/images/Fig1.png" alt= "City Latitude vs. Max Temperature"></a>
                         <a href= "humidity.html"><img id= "side-img2" src= "Resources/assets/images/Fig2.png", alt= "City Latitude vs. Humidity"></a>
