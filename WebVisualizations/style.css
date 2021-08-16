@@ -6,11 +6,11 @@ body{
 } 
 
 .jumbotron{
-    background-color: rgba(50, 115, 220, 0.3);
+    background-color: rgba(21, 156, 173, 0.3);
 }
 
 h2{
-    color: rgb(55, 170, 250);
+    color: rgba(49, 190, 190, 0.801);
 }
 
 .navbar{
@@ -18,7 +18,7 @@ h2{
 }
 
 .navbar-header{
-    background-color:gb(20, 180, 164);
+    background-color:rgb(20, 180, 164);
     position: relative;
     margin-left: 4.5% !important;
     padding-left: 3%;
@@ -41,11 +41,11 @@ h2{
 }
 
 .navbar a:hover {
-    color:rgb(161, 206, 238) !important;
+    color:rgba(39, 175, 175, 0.555) ;
   }
 
 p{
-    color: whitesmoke;
+    color: rgba(22, 22, 22, 0.425);
 }
 
 .main img{
