@@ -7,6 +7,9 @@
 
 
     <link rel="stylesheet" type="text/css" media="screen" href="style.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
  
     <title>Latitude Analysis Dashboard with Attitude</title>
 
@@ -24,61 +27,92 @@
 <!--BEGIN DIV CLASSES-->
 
 <body>
-        <nav>
-            <a class="links" href="index.html">HOME</a>
-            <a class="links" href="comparison.html">Comparison</a>
-            <a class="links" href="data.html">Data</a>
-            <div class="dropdown-menu">
-                <button class="menu-btn">Plots </button>
-                <div class="menu-content">
-                    <a class="links-hidden" href="maxtemperature.html">Max Tempterature</a>
-                    <a class="links-hidden" href="humidity.html">Humidity</a>
-                    <a class="links-hidden" href="cloudiness.html">Cloudiness</a>
-                    <a class="links-hidden" href="windspeed.html">Wind Speed</a>
-                </div>
+    <nav class="navbar navbar-default">
+        <div class="container-fluid">
+            <!--BEGIN ACTIVE NAVIGATION-->
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="index.html"> 
+                <span class="nav-color navbaractive">Latitude</span></a>
+            </div>
+            <!--END ACTIVE NAVIGATION-->
+            <div class="collapse navbar-collapse" id="myNavbar">
+                
+
+            <div class="nav navbar-nav navbar-right">
+                <!--BEGIN DROP DOWN NAV-->
+                <li class="dropdown">
+                    <a class="dropdown-toggle" data-toggle="dropdown">Plots<span class="caret"></span></a>
+                    <ul class="dropdown-menu">
+                        <li><a href="maxtemperature.html">Max Temperature</a></li>
+                        <li><a href="humidity.html">Humidity</a></li>
+                        <li><a href="cloudiness.html">Cloudiness</a></li>
+                        <li><a href="windspeed.html">Wind Speed</a></li>
+                    </ul>
+                </li>
+                <!--END DROP DOWN NAV-->
+
+                <!--BEGIN DROP DOWN NAV-->
+                <li><a href="comparison.html"> Comparison</a></li>
+                <li><a href="data.html"> Data</a></li>           
+                <!--BEGIN DROP DOWN NAV-->                                
             </div>
 
-        </nav>
-            <!--DIVIDER ROWS-->
- 
+        </div>      
+    </nav>
     
-
-        <div class= "container">
-            <div class= "row">
-                <div class= "col-md-7">
-                    <div class="main-box whiteback">
-                    <h1>Summary: Latitude vs Max Temperature</h1>
-                    <hr>
-                    <div id="summarytext">
-                        <img id= "landingimage" src= "Resources/assets/images/Fig1.png" alt= "City Latitude vs. Max Temperature">
-                        <p>
-                            The purpose of this project was to analyze how weather changes as you get closer to the equator. 
-                            To accomplish this analysis, we first pulled data from the OpenWeatherMap API to assemble a dataset on over 500 cities.
-                            <br><br>
-                            After assembling the dataset, we used Matplotlib to plot various aspects of the weather vs. latitude. 
-                            Factors we looked at included: temperature, cloudiness, wind speed, and humidity. 
-                            This site provides the source data and visualizations created as part of the analysis, 
-                            as well as explanations and descriptions of any trends and correlations witnessed.
-                        </p>
-                    </div>
-                    </div>
-                </div>
-
-                <div class= "col-md-5">
-                    <div class= "side-box">
-                    <h2 class= "main-pg-subheader">Visualizations</h2>
-                    <div class= "sidebar">
-                        <a href= "maxtemperature.html"><img id= "side-img1" src="Resources/assets/images/Fig1.png" alt= "City Latitude vs. Max Temperature"></a>
-                        <a href= "humidity.html"><img id= "side-img2" src= "Resources/assets/images/Fig2.png", alt= "City Latitude vs. Humidity"></a>
-                        <a href= "cloudiness.html"><img id= "side-img3" src= "Resources/assets/images/Fig3.png", alt= "City Latitude vs. Cloudiness"></a>
-                        <a href= "wind.html"><img id= "side-img4" src= "Resources/assets/images/Fig4.png", alt= "City Latitude vs. Wind Speed"></a>
-                        </div>
-                    </div>
-                </div>
+    
+    
+    
+    
+    
+      <div class="container">
+        <div class="row">
+          <div class="col-sm-12 col-md-7 main">
+            <div class="jumbotron">
+              <h2 class="display-4">Max Temperature</h2>
+              <hr class="my-4">
+              <img class="pull-left img-responsive" src="Resources/assets/images/Fig1.png" alt="Card image" style="width: 40%;">
+              <p>As expected, there is a strong relationship between latitude and temperature. The most obvious trend analyzed from the weather data is that cities closest to the equator tend to be the warmest, and the cities furthest away, are the coldest.</p>
             </div>
+          </div>
+    
+          <div class="col-sm-12 col-md-5 right">
+            <div class="jumbotron">
+              <h2 class="display-4">Visualisations</h2>
+              <hr class="my-4">
+              <div class="row">
+                <div class="col-12 col-sm-3 col-md-6">
+                  <a href="maxTemp.html">         
+                   <img class="img-responsive" src="Resources/assets/images/Fig1.png" alt="Card image cap">
+                  </a>
+                </div>
+                <div class="col-12 col-sm-3 col-md-6"> 
+                  <a href="humidity.html">           
+                    <img class="img-responsive" src="Resources/assets/images/Fig2.png" alt="Card image cap">
+                  </a>
+                </div>
+            
+                <div class="col-12 col-sm-3 col-md-6"> 
+                  <a href="cloudiness.html">       
+                    <img class="img-responsive" src="Resources/assets/images/Fig3.png" alt="Card image cap">
+                  </a>
+                </div>
+                <div class="col-12 col-sm-3 col-md-6"> 
+                  <a href="windSpeed.html">       
+                    <img class="img-responsive" src="Resources/assets/images/Fig4.png" alt="Card image cap">
+                  </a>
+                </div>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
-
-
+      </div>
 <!--END DIV CLASSES-->
 
 </body>
