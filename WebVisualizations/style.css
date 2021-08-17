@@ -67,11 +67,7 @@ p{
     
     box-shadow: 10px 10px 40px rgb(20, 180, 164, 0.555);
   }
-.row {
-    display: flex;
-    flex-wrap: wrap;
-    padding: 0 4px;
-}
+
 
   @media (max-width: 600px)
   
