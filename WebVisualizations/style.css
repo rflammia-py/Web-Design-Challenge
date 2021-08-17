@@ -68,20 +68,13 @@ p{
     box-shadow: 10px 10px 40px rgb(20, 180, 164, 0.555);
   }
   
-[class*="col-"] {
-    flex: 50%;
-    max-width: 50%;
-    padding: 0 4px;
-}
+
 
 @media screen and (max-width: 600px)
 
   
   {
-      .column {
-          flex: 100%;
-          max-width: 100%;
-      }
+      
     
       .navbar-header{
           margin-left: -5% ;  
