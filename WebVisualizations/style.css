@@ -8,7 +8,7 @@ body{
 .jumbotron{
     background-color: rgba(21, 156, 173, 0.3);
 }
-
+.c
 h2{
     color: rgba(20, 180, 164);
 }
@@ -70,3 +70,15 @@ p{
 
 
 
+  @media (max-width: 768px)
+  {
+     
+      .navbar-header{
+          margin-left: -5% ;  
+      }
+  
+      .right img{
+          margin:auto;
+          margin-bottom: 2%;
+      }
+  } 
