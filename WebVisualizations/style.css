@@ -42,7 +42,7 @@ h2{
 }
 
 .navbar a:hover {
-    color:rgba(39, 175, 175, 0.555) ;
+    color:rgba(20, 180, 164, 0.555) ;
   }
 
 p{
@@ -63,8 +63,8 @@ p{
 }
 
 .right img:hover {
-    /* border: 0.5px solid rgb(55, 170, 250);  */
-    box-shadow: 10px 10px 40px rgb(125, 65, 202);
+    
+    box-shadow: 10px 10px 40px rgb(20, 180, 164, 0.555);
   }
 
 
