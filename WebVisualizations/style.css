@@ -28,6 +28,7 @@ h2{
 .navbar-brand {
     color: white !important; 
     font-size: 30px;   
+    padding: 10px;
 }
 
 .navbar-brand i{
