@@ -69,15 +69,4 @@ p{
   }
 
 
-@media (max-width: 768px)
-{
-   
-    .navbar-header{
-        margin-left: -5% ;  
-    }
 
-    .right img{
-        margin:auto;
-        margin-bottom: 2%;
-    }
-} 
