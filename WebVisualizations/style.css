@@ -67,7 +67,10 @@ p{
     
     box-shadow: 10px 10px 40px rgb(20, 180, 164, 0.555);
   }
-  
+.plot img:hover {
+    
+    box-shadow: 10px 10px 40px rgb(20, 180, 164, 0.555);
+  }  
 
 
 @media screen and (max-width: 600px)
