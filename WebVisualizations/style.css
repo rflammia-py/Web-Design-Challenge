@@ -36,6 +36,9 @@ h2{
     color:rgb(20, 180, 164);
     font-size: 20px;
 }
+.navbar-default .navbar-brand {
+    color: white;
+}
 
 .nav li{
     font-size: 22px;
