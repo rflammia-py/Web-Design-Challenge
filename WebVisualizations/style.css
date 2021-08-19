@@ -20,21 +20,21 @@ h2{
 .navbar-header{
     background-color:rgb(20, 180, 164);
     position: relative;
-    margin-left: 4.5% !important;
+    margin-left: 4.5%;
     padding-left: 3%;
     padding-right: 2%;
 }
 
 .navbar-brand {
 
-    color: white !important; 
+    color: white; 
     font-size: 30px;   
     padding: 10px;
 }
 
 .navbar-brand i{
     color:rgb(20, 180, 164);
-    font-size: 20px !important;
+    font-size: 20px;
 }
 
 .nav li{
@@ -43,7 +43,7 @@ h2{
 }
 
 .navbar a:hover {
-    color:rgba(20, 180, 164, 0.555) ;
+    color:rgba(20, 180, 164, 0.555);
   }
 
 p{
@@ -62,6 +62,10 @@ p{
 .right img{
     margin: 10%;
 }
+.navbar a:hover {
+    color:rgb(20, 180, 164, 0.555);
+  }
+
 
 .right img:hover {
     
