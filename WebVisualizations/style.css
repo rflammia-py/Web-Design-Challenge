@@ -37,7 +37,7 @@ h2{
     font-size: 20px;
 }
 .navbar-default .navbar-brand {
-    color: white;
+    color: white !important;
 }
 
 .nav li{
